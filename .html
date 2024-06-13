@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positive Life Campaign</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background: linear-gradient(to bottom, #87CEEB, #f0f8ff); /* Sky gradient */
+        }
+
+        header {
+            background: #ffcccb;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            z-index: 1; /* Ensures header is on top */
+            position: relative;
+        }
+
+        nav {
+            background: #ffddcc;
+            padding: 10px;
+            text-align: center;
+            z-index: 1; /* Ensures nav is on top */
+            position: relative;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        section {
+            padding: 20px;
+            position: relative;
+            z-index: 1; /* Ensures section content is on top */
+            background: #fff;
+            margin: 10vh auto; /* Adds space between sections */
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .banner {
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black; /* Changed to black */
+            font-size: 4em; /* Doubled the size */
+        }
+
+        .positive-quote {
+            background: #ffebcd;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        footer {
+            background: #ffcccb;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1; /* Ensures footer is on top */
+        }
+
+        .container {
+            position: absolute;
+            width: 100vw;
+            height: 300vh; /* Increased height */
+            overflow: hidden;
+            z-index: 2; /* Ensures container is behind images */
+        }
+
+        .moving-image {
+            position: absolute;
+            width: 10vw;
+            z-index: 3; /* Ensures images are on top */
+            cursor: pointer;
+        }
+
+        .speech-bubble {
+            position: absolute;
+            background: white;
+            border: 2px solid #333;
+            padding: 10px;
+            border-radius: 10px;
+            width: 200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 4; /* Ensure speech bubble is on top */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Positive Life Campaign</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#our-story">Our Story</a>
+        <a href="#blog">Blog/Articles</a>
+        <a href="#community">Community Forum</a>
+        <a href="#events">Events & Activities</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact & Join</a>
+        <a href="#guestbook">Guestbook</a>
+    </nav>
+    <div class="container"></div>
+
+    <section id="home">
+        <div class="banner">
+            <div id="positive-quotes">Welcome to Positive Life Campaign</div>
+        </div>
+        <div class="positive-quote" id="quote-container">
+            <!-- Quotes will appear here -->
+        </div>
+    </section>
+    <section id="our-story">
+        <h2>Our Story</h2>
+        <p>Our campaign started with a simple mission: to spread positivity and inspire people to live their best lives. Our vision is to create a supportive community where everyone can share their stories and uplift each other. We believe that through collective efforts and shared experiences, we can create a ripple effect of positivity that impacts the world.</p>
+    </section>
+    <section id="blog">
+        <h2>Blog/Articles</h2>
+        <article>
+            <h3>Positive Living: A Success Story</h3>
+            <p>Read about Jane's journey to a positive life and how she overcame challenges with a smile. Jane's story is a testament to the power of a positive mindset. Despite facing numerous obstacles, she found strength and motivation through her community and personal resolve.</p>
+        </article>
+        <article>
+            <h3>Interview with Dr. Smith</h3>
+            <p>We sat down with Dr. Smith, a renowned psychologist, to discuss the benefits of a positive mindset. Dr. Smith shares practical tips and insights on how to cultivate positivity in daily life and the profound impact it can have on mental health.</p>
+        </article>
+    </section>
+    <section id="community">
+        <h2>Community Forum</h2>
+        <p>Share your experiences and support each other in our community forum. Together, we can make a difference! Join discussions, ask questions, and find encouragement from like-minded individuals who are also on a journey to live a positive life.</p>
+    </section>
+    <section id="events">
+        <h2>Events & Activities</h2>
+        <p>Join our upcoming events, workshops, and seminars to connect with like-minded individuals and learn more about living a positive life. Our events are designed to provide practical tools, inspiring stories, and a supportive community to help you thrive.</p>
+    </section>
+    <section id="resources">
+        <h2>Resources</h2>
+        <p>Discover books, videos, and podcasts that can help you cultivate a positive mindset and live a happier life. Our curated list of resources includes recommendations from experts and community members, ensuring you have access to the best materials to support your journey.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact & Join</h2>
+        <p>If you want to get involved with our campaign, please reach out to us at contact@positivelifecampaign.com or fill out the form below. We welcome new members and volunteers who are passionate about spreading positivity and making a difference.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <section id="guestbook">
+        <div class="guestbook">
+            <h2>Guestbook</h2>
+            <form id="guestbook-form">
+                <label for="guest-name">Name:</label>
+                <input type="text" id="guest-name" name="guest-name" required>
+                <label for="guest-message">Your Positive Commitment:</label>
+                <textarea id="guest-message" name="guest-message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="guestbook-messages" id="guestbook-messages">
+                <!-- Submitted messages will appear here -->
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Positive Life Campaign. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+        function getRandomPosition() {
+            const x = 10 + getRandomInt(80); // Center images within a 80% width range centered on 50%
+            const y = 10 + getRandomInt(80); // Center images within a 80% height range centered on 50%
+            return { x, y };
+        }
+
+        function getRandomAngle() {
+            return getRandomInt(360);
+        }
+
+        function createKeyframes(name, duration) {
+            const keyframes = `
+                @keyframes ${name} {
+                    0% { transform: translate(${getRandomPosition().x}vw, ${getRandomPosition().y}vh) rotate(${getRandomAngle()}deg); }
+                    25% { transform: translate(${getRandomPosition().x}vw, ${getRandomPosition().y}vh) rotate(${getRandomAngle()}deg); }
+                    50% { transform: translate(${getRandomPosition().x}vw, ${getRandomPosition().y}vh) rotate(${getRandomAngle()}deg); }
+                    75% { transform: translate(${getRandomPosition().x}vw, ${getRandomPosition().y}vh) rotate(${getRandomAngle()}deg); }
+                    100% { transform: translate(${getRandomPosition().x}vw, ${getRandomPosition().y}vh) rotate(${getRandomAngle()}deg); }
+                }
+            `;
+            const styleSheet = document.styleSheets[0];
+            styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
+            return `${name} ${duration}s infinite alternate linear`;
+        }
+
+        function createRotationKeyframes(name, duration) {
+            const keyframes = `
+                @keyframes ${name} {
+                    0% { transform: rotate(0deg) translate(${getRandomPosition().x}vw, ${getRandomPosition().y}vh); }
+                    25% { transform: rotate(90deg) translate(${getRandomPosition().x}vw, ${getRandomPosition().y}vh); }
+                    50% { transform: rotate(180deg) translate(${getRandomPosition().x}vw, ${getRandomPosition().y}vh); }
+                    75% { transform: rotate(270deg) translate(${getRandomPosition().x}vw, ${getRandomPosition().y}vh); }
+                    100% { transform: rotate(360deg) translate(${getRandomPosition().x}vw, ${getRandomPosition().y}vh); }
+                }
+            `;
+            const styleSheet = document.styleSheets[0];
+            styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
+            return `${name} ${duration}s infinite linear`;
+        }
+
+        const container = document.querySelector('.container');
+
+        const characterImages = [
+            'https://i.imgur.com/aMllGig.png',
+            'https://i.imgur.com/03x9M2Z.png',
+            'https://i.imgur.com/OFFX5up.png',
+            'https://i.imgur.com/7o0BgZS.png',
+            'https://i.imgur.com/bD9U05e.png',
+            'https://i.imgur.com/sddwYXV.png',
+            'https://i.imgur.com/0r4kUE9.png',
+            'https://i.imgur.com/BJ8RyhI.png',
+            'https://i.imgur.com/SGlcDVW.png',
+            'https://i.imgur.com/31Okm7U.png',
+            'https://i.imgur.com/g0H9rhU.png',
+            'https://i.imgur.com/NNrGhHu.png',
+            'https://i.imgur.com/nv3BoD6.png',
+            'https://i.imgur.com/lG9tN5w.png',
+            'https://i.imgur.com/1xmmLPU.png'
+        ];
+
+        const objectImages = [
+            'https://imgur.com/z3Nfhpd.png',
+            'https://imgur.com/8kUGJXz.png',
+            'https://imgur.com/kaHrYyc.png',
+            'https://imgur.com/L6VLoBi.png',
+            'https://imgur.com/OmjtstR.png',
+            'https://imgur.com/dATJyBB.png',
+            'https://imgur.com/tsAnRQQ.png',
+            'https://imgur.com/coUSETG.png',
+            'https://imgur.com/pmI7Xsp.png',
+            'https://imgur.com/9WEwvqF.png',
+            'https://imgur.com/fKuAEgB.png',
+            'https://imgur.com/Wj5CQ5Q.png'
+        ];
+
+        const messages = [
+            "Keep going!",
+            "You are amazing!",
+            "Believe in yourself!",
+            "Stay positive!"
+        ];
+
+        const quotes = [
+            "You are capable of amazing things.",
+            "Believe in yourself and all that you are.",
+            "Positivity always wins.",
+            "Stay positive, work hard, make it happen.",
+            "You are stronger than you think.",
+            "Your only limit is your mind.",
+            "Good things take time.",
+            "Keep going, keep growing.",
+            "Dream it, believe it, achieve it.",
+            "The best time for new beginnings is now."
+        ];
+
+        let quoteIndex = 0;
+
+        function changeQuote() {
+            const quoteContainer = document.getElementById('quote-container');
+            quoteContainer.textContent = quotes[quoteIndex];
+            quoteIndex = (quoteIndex + 1) % quotes.length;
+        }
+
+        setInterval(changeQuote, 10000); // Change quote every 10 seconds
+        changeQuote(); // Set initial quote
+
+        characterImages.forEach((src, i) => {
+            const img = document.createElement('img');
+            img.src = src;
+            img.alt = `Character ${i + 1}`;
+            img.classList.add('moving-image');
+            img.style.left = `${getRandomPosition().x}vw`;
+            img.style.top = `${getRandomPosition().y}vh`;
+            img.style.transform = `rotate(${getRandomAngle()}deg)`;
+            img.style.animation = createKeyframes(`roamCharacter${i}`, 10 + getRandomInt(20));
+            img.addEventListener('click', () => showSpeechBubble(img));
+            container.appendChild(img);
+        });
+
+        objectImages.forEach((src, i) => {
+            const img = document.createElement('img');
+            img.src = src;
+            img.alt = `Object ${i + 1}`;
+            img.classList.add('moving-image');
+            img.style.left = `${getRandomPosition().x}vw`;
+            img.style.top = `${getRandomPosition().y}vh`;
+            img.style.animation = createRotationKeyframes(`rotateObject${i}`, 15 + getRandomInt(20));
+            img.addEventListener('click', () => showSpeechBubble(img));
+            container.appendChild(img);
+        });
+
+        function showSpeechBubble(img) {
+            const bubble = document.createElement('div');
+            bubble.classList.add('speech-bubble');
+            const rect = img.getBoundingClientRect();
+            bubble.style.left = `${rect.left + window.scrollX}px`; // Adjusted to account for scroll position
+            bubble.style.top = `${rect.bottom + window.scrollY}px`; // Adjusted to account for scroll position
+            bubble.textContent = messages[getRandomInt(messages.length)];
+            document.body.appendChild(bubble);
+            setTimeout(() => bubble.remove(), 3000);
+        }
+
+        document.getElementById('guestbook-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('guest-name').value;
+            const message = document.getElementById('guest-message').value;
+            const guestbookMessages = document.getElementById('guestbook-messages');
+            const newMessage = document.createElement('div');
+            newMessage.classList.add('guestbook-message');
+            newMessage.innerHTML = `<strong>${name}:</strong> <p>${message}</p>`;
+            guestbookMessages.prepend(newMessage);
+            document.getElementById('guestbook-form').reset();
+        });
+    </script>
+</body>
+</html>
